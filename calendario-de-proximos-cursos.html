@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <title>Calendario de Próximos Cursos</title>
+
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+
+    <!--copiar los link y script de la clase 11. archivo(06_calendario) MAS EL JS-->
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="stylesheet" href="css/calendario.css">
+
+</head>
+
+<body>
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                    <option value="Cursos Destacados"></option>
+                    <option value="Calendario De Proximos Cursos"></option>
+                    <option value="Formulario De Contacto"></option>
+                    <option value="Formulario De Contacto"></option>
+                    <option value="Gift Card"></option>
+                </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                    Detalles de Cursos
+                </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                    Próximos Cursos
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    Inscripción a cursos
+                </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                    Gift Card
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="titulo-de-calendario">
+            <h2>
+                Calendario
+            </h2>
+        </section>
+        <article id="calendario"></article>
+    </main>
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Política de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>

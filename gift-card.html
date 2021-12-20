@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <title>Gift Card</title>
+    <link rel="stylesheet" href="css/estilo-principal.css" />
+    <link rel="stylesheet" href="css/gift-card.css" />
+
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/gift-card.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                        <option value="Cursos Destacados"></option>
+                        <option value="Calendario De Proximos Cursos"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Gift Card"></option>
+                    </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                Detalles de Cursos
+            </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                Próximos Cursos
+            </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                Inscripción a cursos
+            </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                Gift Card
+            </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                Contacto
+            </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container-gift-card">
+
+            <div class="visualizacion" id="visualizacion">
+                <p id="pesos">$ <span id="precio">0000</span> </p>
+                <p id="titulo-del-gift">
+                    GIFT CARD para
+                    <br>
+                    <strong id="destinatario">DESTINATARIO.</strong>
+                    <br>
+                </p>
+                <small>VISTA PREVIA DEL RESULTADO DE PERSONALIZACIÓN  </small>
+                <p id="fechaHora">FECHA Y HORA</p>
+            </div>
+
+            <div class="body-gift-card">
+                <h2>Personaliza tu Giftcard</h2>
+
+                <input type="text" class="nombre-destinatario" id="nombre" placeholder="Nombre del Destinatario" />
+
+                <h3>Color</h3>
+                <div class="container-btn">
+                    <div class="grp-btn">
+                        <p class="btn btn-red"></p>
+                        <input type="radio" name="color" id="btn-red" value="red" />
+
+                        <p class="btn btn-blue"></p>
+                        <input type="radio" name="color" id="btn-blue" value="blue" />
+
+                        <p class="btn btn-green"></p>
+                        <input type="radio" name="color" id="btn-green" value="green" />
+
+                        <p class="btn btn-yellow"></p>
+                        <input type="radio" name="color" id="btn-yellow" value="yellow" />
+                    </div>
+                </div>
+
+                <h3>Tamaño de fuente</h3>
+                <div class="container-btn">
+                    <div class="grp-btn">
+                        <p class="p-20">20px</label>
+                            <input type="radio" name="font" value="20px" />
+                    </div>
+                    <div class="grp-btn">
+                        <p class="p-28">28px</p>
+                        <input type="radio" name="font" value="28px" />
+                    </div>
+                    <div class="grp-btn">
+                        <p class="p-32">32px</p>
+                        <input type="radio" name="font" value="32px" />
+                    </div>
+                    <div class="grp-btn">
+                        <p class="p-48">48px</p>
+                        <input type="radio" name="font" value="48px" />
+                    </div>
+                    <div class="grp-btn">
+                        <p class="p-60">60px</p>
+                        <input type="radio" name="font" value="60px" />
+                    </div>
+                </div>
+
+                <div class="gprValor">
+                    <h3>Monto$</h3>
+                    <input type="text" class="monto-destinatario" id="monto" />
+                </div>
+
+                <h3>Ubicación</h3>
+                <div class="container-btn">
+                    <div class="grp-btn">
+                        <img class="img-position" src="./img/buttom-right.png">
+                        <input type="radio" name="pos" value="abajo-derecha" />
+
+                        <img class="img-position" src="./img/up-right.png">
+                        <input type="radio" name="pos" value="arriba-derecha" />
+
+                        <img class="img-position" src="./img/up-left.png">
+                        <input type="radio" name="pos" value="arriba-izquierda" />
+                    </div>
+                </div>
+
+                <h3>Fondo</h3>
+                <div class="container-btn">
+                    <div class="grp-btn">
+                        <img class="img-position" src="./img/bkg-coche.png">
+                        <input type="radio" name="fondo" value="coche" />
+
+                        <img class="img-position" src="./img/bkg-goku.png">
+                        <input type="radio" name="fondo" value="goku" />
+
+                        <img class="img-position" src="./img/bkg-guitarra.png">
+                        <input type="radio" name="fondo" value="guitarra" />
+
+                        <img class="img-position" src="./img/bkg-pizza.png">
+                        <input type="radio" name="fondo" value="pizza" />
+                    </div>
+                </div>
+
+                <div class="btn-right">
+                    <button class="btn-submit-giftcard">Confirmar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Política de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>

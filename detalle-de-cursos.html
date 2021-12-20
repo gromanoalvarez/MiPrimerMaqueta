@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <title>Detalles De Cursos</title>
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="stylesheet" href="css/detalle-cursos-destacados.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/detalle-de-curso.js"></script>
+
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                        <option value="Cursos Destacados"></option>
+                        <option value="Calendario De Proximos Cursos"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Gift Card"></option>
+                    </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                    Detalles de Cursos
+                </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                    Proximos Cursos
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    Inscripcion a cursos
+                </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                    Gift Card
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="cuerpo">
+
+        <section class="foto-titulo-detalles">
+            <article class="foto">
+                <img src="img/java desde cero.jpg" alt="Java desde Cero">
+            </article>
+
+            <article class="titulo-detalles">
+                <h2>Java con Eclipse</h2>
+                <h3><span id="inscripcion">56277 </span> vistas recientes</h3>
+                <p> Valor: $10.500.
+                    <br> Tiempo de dedicacion: 50hs.
+                    <br> Descripcion del curso:
+                    <br>Explica cómo utilizar la sintaxis y los tipos de datos básicos de Java.
+                    <br>Utilice expresiones Java, operadores, declaraciones de ramificación y bucle para escribir código Java simple.
+                    <br> La audiencia de este curso:
+                    <br>- Cualquiera interesado en aprender Java.
+                    <br>- Programadores.
+                    <br>- Gerentes técnicos.
+                    <br>- Desarrolladores de aplicaciones.
+                </p>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    <button onclick="sumarInscripcion()">Inscribirse aqui</button>
+                </a>
+            </article>
+        </section>
+
+        <section class="contenidos-en-columnas">
+            <article class="titulo">
+                <h2>Contenidos</h2>
+            </article>
+
+            <article class="formulario-de-contenidos" id="accordion">
+                <h3>INTRODUCCION</h3>
+                <div class="unidades">
+                    <p><i class="fas fa-download"></i>. Instalacion de programas</p>
+                    <p><i class="fab fa-leanpub"></i>. Conceptos basicos</p>
+                    <p><i class="fas fa-play-circle"></i>. Repaso con diapositivas</p>
+                </div>
+
+                <h3>UNIDAD 2</h3>
+                <div class="unidades">
+                    <p><i class="fab fa-leanpub"></i>. Conceptos avanzados</p>
+                    <p><i class="fas fa-dumbbell"></i>. Ejercitacion de toda la tematica acumulada</p>
+                    <p><i class="fas fa-chalkboard-teacher"></i>. Repaso oral</p>
+                </div>
+
+                <h3>UNIDAD 3</h3>
+                <div class="unidades">
+                    <p><i class="fas fa-brain"></i>. Ejercitacion y despeje de dudas</p>
+                    <p><i class="fas fa-video"></i>. Repaso con videos</p>
+                    <p><i class="fas fa-graduation-cap"></i>. Evaluacion</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="docente">
+            <article class="titulo">
+                <h2>Docente</h2>
+            </article>
+
+            <article class="imagen-y-datos-del-docente">
+
+                <div class="imagen-del-docente">
+                    <img src="img/spinetta.jpg" alt="Spinetta">
+                </div>
+
+                <div class="datos-del-docente">
+                    <h3>Luis Alberto Spinetta</h3>
+                    <img src="img/45estrellas.jpg" alt="valoracion con estrellas">
+                    <p>Formacion:
+                        <br> Ingeniero Civil, durante mi carrera he trabajado en diferentes empresas de desarrollo y tecnologías TI, en diferentes cargos como desarrollador, jefe de proyectos y arquitecto.
+                        <br> Entusiasta de las nuevas tecnologías, gran parte de mi tiempo la dedico a la investigación y desarrollo, más de 15 años de experiencia desarrollando, aprendiendo y enseñando diversas tecnologías relacionadas al desarrollo
+                        de aplicaciones.
+                        <br> Java SE 8, Java EE 8, Spring Framework, Spring Boot 2, Microservicios, Hibernate, JPA, Angular, PHP 8, POO, UML y Patrones de Diseño.
+                    </p>
+                </div>
+
+            </article>
+        </section>
+
+        <article class="diferentes-cursos02">
+
+            <div class="div02">
+                <div class="posicion-relativa">
+                    <h3 class="posicion-absoluta"> $4,690</h3>
+                </div>
+                <div class="dos-columnas">
+                    <div>
+                        <p class="horas">16hs</p>
+                    </div>
+                    <div class="nombre-del-curso">
+                        <p> Javascript</p>
+                        <a href="detalle-de-cursos.html">Ver Detalle</a>
+                        <br>
+                        <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="div02">
+                <div class="posicion-relativa">
+                    <h3 class="posicion-absoluta"> $15,090</h3>
+                </div>
+                <div class="dos-columnas">
+                    <div>
+                        <p class="horas">40hs</p>
+                    </div>
+                    <div class="nombre-del-curso">
+                        <p>MySQL</p>
+                        <a href="detalle-de-cursos.html">Ver Detalle</a>
+                        <br>
+                        <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="div02">
+                <div class="posicion-relativa">
+                    <h3 class="posicion-absoluta"> $5,790</h3>
+                </div>
+                <div class="dos-columnas">
+                    <div>
+                        <p class="horas">12hs</p>
+                    </div>
+                    <div class="nombre-del-curso">
+                        <p>Git</p>
+                        <a href="detalle-de-cursos.html">Ver Detalle</a>
+                        <br>
+                        <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="div02">
+                <div class="posicion-relativa">
+                    <h3 class="posicion-absoluta"> $13.800</h3>
+                </div>
+                <div class="dos-columnas">
+                    <div>
+                        <p class="horas">48hs</p>
+                    </div>
+                    <div class="nombre-del-curso">
+                        <p> Pyton</p>
+                        <a href="detalle-de-cursos.html">Ver Detalle</a>
+                        <br>
+                        <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Política de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>

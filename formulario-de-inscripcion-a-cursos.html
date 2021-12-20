@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <title>Formulario de Inscripcion a Cursos</title>
+
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+
+
+
+
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="stylesheet" href="css/formulario-inscripcion.css">
+    <link rel="stylesheet" href="css/ladda-themeless.min.css">
+    <link rel="stylesheet" href="css/toastr.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                        <option value="Cursos Destacados"></option>
+                        <option value="Calendario De Proximos Cursos"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Gift Card"></option>
+                    </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                    Detalles de Cursos
+                </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                    Proximos Cursos
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    Inscripción a cursos
+                </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                    Gift Card
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="relleno-de-inscripcion">
+            <article class="titulares">
+                <h2>
+                    Java
+                </h2>
+                <h3>
+                    Inscripción
+                </h3>
+            </article>
+
+            <article class="formulario">
+                <form action="#" method="GET">
+                    <div>
+                        <label for="nombre1"></label>
+                        <input id="nombre1" class="completar" type="text" name="nombres[]" placeholder="Ingrese su nombre" required>
+
+                        <label for="apellido1"></label>
+                        <input id="apellido1" class="completar" type="text" name="apellidos[]" placeholder="Ingrese su apellido" required>
+
+                        <label for="dni1"></label>
+                        <input id="dni1" class="completar" type="number" name="dni[]" placeholder="Ingrese su D.N.I" min="0" max="99999999" required>
+
+                        <button class="eliminar">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <label for="nombre2"></label>
+                        <input id="nombre2" class="completar" type="text" name="nombres[]" placeholder="Ingrese su nombre" required>
+
+                        <label for="apellido2"></label>
+                        <input id="apellido2" class="completar" type="text" name="apellidos[]" placeholder="Ingrese su apellido" required>
+
+                        <label for="dni2"></label>
+                        <input id="dni2" class="completar" type="number" name="dni[]" placeholder="Ingrese su D.N.I" min="0" max="99999999" required>
+
+                        <button class="eliminar">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+                    </div>
+
+                    <div class="bloque">
+                        <label for="nombre3"></label>
+                        <input id="nombre3" class="completar" type="text" name="nombres[]" required placeholder="Ingrese su nombre">
+
+                        <label for="apellido3"></label>
+                        <input id="apellido3" class="completar" type="text" name="apellidos[]" required placeholder="Ingrese su apellido">
+
+                        <label for="dni3"></label>
+                        <input id="dni3" class="completar" type="number" name="dni[]" required placeholder="Ingrese su D.N.I" min="0" max="99999999">
+
+                        <button class="eliminar">
+                            <i class="fas fa-minus-circle"></i>
+                        </button>
+                    </div>
+
+                </form>
+            </article>
+
+            <article class="agregar-persona">
+                <div class="primer-renglon">
+                    <button class="clonar">
+                        <i class="fas fa-user-plus"><span> Agregar persona</span></i>
+                    </button>
+                </div>
+                <div class="button-inscribirse">
+                    <label for="precio">$<span id="precio"></span> </label>
+                    <!-- <input type="button" value="Inscribirse"> -->
+                    <button id="btnEnviar" class="btn btn-primary ladda-button" data-style="zoom-in">
+                        <span class="ladda-label">Inscribirse</span>
+                    </button>
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Política de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/ladda.min.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/formulario-inscripcion.js"></script>
+
+</body>
+
+</html>

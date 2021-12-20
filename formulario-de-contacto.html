@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <title>Formulario de Contacto</title>
+
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery_validate.js"></script>
+    <script src="js/formulario-contacto.js"></script>
+
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                        <option value="Cursos Destacados"></option>
+                        <option value="Calendario De Proximos Cursos"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Gift Card"></option>
+                    </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                    Detalles de Cursos
+                </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                    Proximos Cursos
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    Inscripción a cursos
+                </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                    Gift Card
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="titulo01">
+            <h2>Contacto</h2>
+        </section>
+        <section class="contacto">
+            <article class="formulario-de-contacto">
+                <form action="#" method="POST" id="form">
+
+                    <div class="formulario nombre-y-apellido">
+                        <label for="nombre"> </label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido">
+                    </div>
+
+                    <div class="formulario">
+                        <label for="mail"> </label>
+                        <input id="mail" type="mail" name="mail" placeholder="E-mail">
+                    </div>
+
+                    <div class="formulario">
+                        <label for="tel"></label>
+                        <input id="tel" type="tel" name="tel" placeholder="Telefono">
+                    </div>
+
+                    <textarea name="consulta" id="consulta" cols="40" rows="10" placeholder="Escribe aqui tu mensaje..."></textarea>
+                    <br>
+                    <div id="caracteres"></div>
+
+                    <input id="boton-enviar" type="button" value="Enviar">
+
+                    <div id="mensaje"> </div>
+
+                </form>
+            </article>
+
+            <article class="datos-de-contacto">
+                <h3>Comunicate con nosotros</h3>
+                <p>
+                    <br> Desde el año 2005 acompañamos a cada alumno en el sueño de crear, desarrollar e innovar soluciones digitales. Desde la práctica constante y compartiendo experiencias de casos reales intentamos contagiar nuestra pasión por la tecnología
+                    <br>
+                    <br>
+                    <strong>Teléfono:</strong> 0800-220-8148
+                    <br>
+                    <strong>Whats app:</strong> (011)15-3464-3243
+                </p>
+            </article>
+        </section>
+
+        <section class="mapa">
+            <article class="titulo02">
+                <h2>
+                    Ubicación
+                </h2>
+            </article>
+            <article class="imagen-de-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.158293887659!2d-58.56035508468578!3d-34.67595416883101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc628e43526dd%3A0x338153f2287eb06b!2sHip%C3%B3lito%20Yrigoyen%202200-2100%2C%20B1754EVJ%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621959091598!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Política de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>

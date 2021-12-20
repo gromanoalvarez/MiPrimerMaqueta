@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-gift-card {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    padding-top: 3em;
+    padding-bottom: 12em;
+    background-image: url(../img/gift\ wrap.png);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: bottom;
+}
+
+.visualizacion {
+    background-image: url(../img/bkg-generico.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    max-width: calc(45% - 2em);
+    height: 450px;
+    margin-bottom: 80px;
+}
+
+.precio {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    top: 4%;
+    left: 59.8%;
+    border: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.visualizacion p {
+    max-width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+    color: black;
+}
+
+.body-gift-card {
+    max-width: calc(45% - 2em);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.nombre-destinatario {
+    background-color: #113d5928;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 6px 0;
+    font-size: xx-large;
+}
+
+.monto-destinatario {
+    background-color: #113d5928;
+    border-radius: 7px;
+    padding: 3px;
+    margin: 6px 0;
+    font-size: xx-large;
+}
+
+.container-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.grp-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    place-content: flex-end;
+}
+
+.btn {
+    width: 20px;
+    height: 20px;
+    margin: 0.25em;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.color-red {
+    color: red;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+.color-green {
+    color: green;
+}
+
+.btn-yellow {
+    background-color: yellow;
+}
+
+.color-yellow {
+    color: yellow;
+}
+
+.p-20 {
+    font-size: 20;
+}
+
+.p-28 {
+    font-size: 28px;
+}
+
+.p-32 {
+    font-size: 32px;
+}
+
+.p-48 {
+    font-size: 48px;
+}
+
+.p-60 {
+    font-size: 60px;
+}
+
+.gprValor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gprValor input[type="text"] {
+    margin-left: 5px;
+}
+
+.img-position {
+    width: 50px;
+    height: 50px;
+    margin: 9px 10px;
+}
+
+.btn-right {
+    margin-top: 20px;
+}
+
+.btn-submit-giftcard {
+    background-color: #113e59;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px #0477BF;
+    margin-top: 20px;
+    font-family: fantasy;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+.btn-submit-giftcard:hover {
+    background-color: #0477BF;
+    border: solid 1px #113e59;
+    cursor: pointer;
+}
+
+.coche {
+    background-image: url(../img/bkg-coche.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.guitarra {
+    background-image: url(../img/bkg-guitarra.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.goku {
+    background-image: url(../img/bkg-goku.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pizza {
+    background-image: url(../img/bkg-pizza.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

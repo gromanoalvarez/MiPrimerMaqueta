@@ -1,0 +1,121 @@
+.titulo01 {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.titulo01 h2 {
+    text-align: left;
+}
+
+.contacto {
+    background-image: url(../img/worl.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 90%;
+    box-shadow: 2px 9px 35px 0px #113e59;
+    -moz-box-shadow: 2px 9px 35px 0px #113e59;
+    -webkit-box-shadow: 2px 9px 35px 0px #113e59;
+}
+
+.formulario-de-contacto {
+    width: calc(50% - 5px);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.formulario input {
+    max-width: 100%;
+    font-size: x-large;
+    margin-bottom: 20px;
+    background-color: #113d593f;
+    border-radius: 10px;
+}
+
+.formulario-de-contacto form textarea {
+    background-color: #1e1e1e81;
+    border-radius: 10px;
+    max-width: 100%;
+    font-size: xx-large;
+}
+
+#boton-enviar {
+    background-color: #113E59;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 10px;
+    text-align: right;
+}
+
+#boton-enviar:hover {
+    background-color: #0477BF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.datos-de-contacto {
+    background-color: rgba(0, 0, 0, 0.479);
+    width: calc(50% - 5px);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.datos-de-contacto h3 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.datos-de-contacto p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.datos-de-contacto strong {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.mapa {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+.titulo02 h2 {
+    text-align: center;
+    border-top: #113E59 2px solid;
+    border-bottom: #113E59 2px solid;
+    margin-bottom: 40px;
+}
+
+.imagen-de-mapa iframe {
+    border: #113E59 3px;
+    border-style: dotted;
+    border-radius: 15px;
+    width: 100%;
+    height: 500px;
+    opacity: 0.7;
+    box-shadow: 2px 9px 35px 0px #113e59;
+    -moz-box-shadow: 2px 9px 35px 0px #113e59;
+    -webkit-box-shadow: 2px 9px 35px 0px #113e59;
+}
+
+.imagen-de-mapa iframe:hover {
+    opacity: 1;
+}

@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat+Subrayada:wght@400;700&family=Saira+Stencil+One&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+h2 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    transition: 2s ease;
+    margin-bottom: 10px;
+    color: #113E59;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #0477BF 0px 0px 20px, #0477BF 0px 0px 30px, #0477BF 0px 0px 40px, #0477BF 0px 0px 50px, #0477BF 0px 0px 75px;
+}
+
+h2:hover {
+    color: #0477BF;
+}
+
+header {
+    background-image: url(../img/fuego\ cubo\ rojo\ azul\ amarillo.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid #a95f2e;
+}
+
+.encabezado-principal {
+    padding: 3.5em 0.5em;
+}
+
+.logo {
+    text-decoration: none;
+    height: 150px;
+}
+
+.logo a {
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.logo img {
+    border: solid 1px #113E59;
+    border-radius: 150px;
+    max-width: 100%;
+    height: 150px;
+}
+
+.logo img:hover {
+    border: solid 1px #0477BF;
+}
+
+.buscador {
+    text-align: center;
+}
+
+.que-buscas {
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 0.9em;
+    background-color: #1e1e1e85;
+    background-image: url(../img/ALTA\ LUPA.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    text-align: center;
+    color: #fff;
+    border-radius: 100px;
+    max-width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.que-buscas:hover {
+    color: #fff;
+    border: solid 1px #0477BF;
+}
+
+.carrito {
+    height: auto;
+    text-align: center;
+}
+
+.carrito i {
+    max-width: 100%;
+    font-size: 1em;
+    font-weight: bolder;
+    transition: 1s ease;
+    color: #113E59;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #0477BF 0px 0px 20px, #0477BF 0px 0px 30px, #0477BF 0px 0px 40px, #0477BF 0px 0px 50px, #0477BF 0px 0px 75px;
+}
+
+.carrito em {
+    font-size: 1em;
+    font-weight: bolder;
+    bottom: 90%;
+    left: 100%;
+    color: #113E59;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #0477BF 0px 0px 20px, #0477BF 0px 0px 30px, #0477BF 0px 0px 40px, #0477BF 0px 0px 50px, #0477BF 0px 0px 75px;
+}
+
+.carrito i:hover {
+    cursor: pointer;
+    transform: scale(1.2) rotate(360deg);
+}
+
+.menu {
+    border-bottom: 2px solid #a95f2eb6;
+    padding: 1.8em;
+    width: 100%;
+    text-align: center;
+}
+
+a.desplegable {
+    display: block;
+    font-size: x-large;
+    cursor: pointer;
+    position: absolute;
+    top: 370px;
+    right: 50%;
+}
+
+a.desplegable:hover {
+    font-size: xx-large;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.menu li {
+    border-radius: 5px;
+    border: 2px solid #113E59;
+    -moz-transform: skew(-12deg, 0deg);
+    /* inclinacion de caja */
+    -webkit-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    background-image: url(../img/rojo\ vertical.jpg);
+    padding: 1em;
+}
+
+.menu li:hover {
+    border: 2px solid #0477BF;
+}
+
+.menu a {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.1em;
+    max-width: 100%;
+}
+
+.cuerpo {
+    background-color: #000;
+    display: inline-block;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+}
+
+.slider {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 50%;
+    box-shadow: 2px 9px 38px 5px #113e59;
+    -moz-box-shadow: 2px 9px 38px 5px #113e59;
+    -webkit-box-shadow: 2px 9px 38px 5px #113e59;
+    background-color: #113d596e;
+}
+
+.slider img {
+    max-width: 100%;
+    height: 20em;
+    border-radius: 50%;
+    border: 2px solid #113E59;
+    text-align: center;
+}
+
+.slider img:hover {
+    border: 2px solid #0477BF;
+}
+
+.slider2 {
+    background-color: #000;
+}
+
+.pasos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.pasos article {
+    background-image: url(../img/code2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    border: solid 2px #113E59;
+    border-radius: 10px;
+    width: calc(33% - 1em);
+    text-align: center;
+    padding: 5em 1em 5em 1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.pasos article:hover {
+    border: 2px solid #0477BF;
+}
+
+.pasos p {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.pasos p:hover {
+    cursor: pointer
+}
+
+.cursos-destacados {
+    background: rgb(17, 62, 89);
+    background: radial-gradient(circle, rgba(17, 61, 89, 0.623) 0%, rgba(0, 0, 0, 1) 47%);
+    text-align: center;
+    max-width: 100%;
+}
+
+.primer-div {
+    text-align: center;
+    margin: 0.5em;
+    border: 2px solid #113E59;
+    border-radius: 10px;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    font-size: 2em;
+}
+
+.posicion-relativa {
+    background-image: url(../img/code1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    max-width: 100%;
+    text-align: center;
+    border: #113E59 2px solid;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1em;
+}
+
+.posicion-absoluta {
+    position: absolute;
+    background-color: #113E59;
+    border-radius: 10px;
+    padding: 0.3em;
+    font-size: 1em;
+    right: 0px;
+    bottom: 40px;
+    z-index: 5;
+}
+
+.dos-columnas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.horas {
+    text-align: center;
+    width: calc(20% - 5px);
+    padding: 0.3em;
+}
+
+.nombre-del-curso {
+    font-size: larger;
+    text-align: end;
+    width: calc(80% - 5px);
+    padding: 0.3em;
+}
+
+.nombre-del-curso a {
+    font-size: small;
+    text-decoration: none;
+}
+
+.boton {
+    background-color: #113E59;
+    border: #113E59 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: large;
+}
+
+.boton:hover {
+    background-color: #0477BF;
+}
+
+.medio-de-pago {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 400px;
+}
+
+.medio-de-pago h2 {
+    margin-bottom: 1em;
+}
+
+.medio-de-pago h2:hover {
+    color: #0477BF;
+}
+
+.medio-de-pago img {
+    max-width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 3.5em;
+}
+
+.medio-de-pago img:hover {
+    border: 2px solid #0477BF;
+}
+
+.contenedor-del-pie {
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 300px;
+    padding: 30px 20px 20px 5px;
+    text-align: center;
+    border-top: 4px solid #a95f2e;
+}
+
+.contenedor-del-pie section {
+    background-image: url(../img/rojo\ vertical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: calc(33% - 1em);
+    margin: auto;
+    font-size: 1.1em;
+    font-style: italic;
+    border: 2px solid #113E59;
+    border-radius: 5px;
+    height: 100%;
+    padding-top: 20px;
+    -moz-transform: skew(-5deg, 0deg);
+    -webkit-transform: skew(-5deg, 0deg);
+    -o-transform: skew(-5deg, 0deg);
+    -ms-transform: skew(-5deg, 0deg);
+    transform: skew(-5deg, 0deg);
+}
+
+.contenedor-del-pie section:hover {
+    border: 2px solid #0477BF;
+}
+
+.contenedor-del-pie ul {
+    list-style: none;
+}
+
+.contenedor-del-pie a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.contenedor-del-pie a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.menu-del-pie p:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:47em) {
+    /*para tablet*/
+    .encabezado-principal {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .logo {
+        width: calc(50% - 1em);
+    }
+    .buscador {
+        width: calc(40% - 1em);
+        text-align: right;
+        position: relative;
+        top: 70px;
+    }
+    .carrito {
+        max-width: calc(10% - 0.3em);
+        position: relative;
+        top: 60px;
+    }
+    .carrito i {
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 2em;
+    }
+    .carrito em {
+        position: absolute;
+        font-size: 0.4em;
+    }
+    a.desplegable {
+        display: none;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .menu li {
+        width: calc(20% - 0.2em);
+    }
+    .diferentes-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .primer-div {
+        width: calc(40% - 5px);
+    }
+}
+
+@media screen and (min-width:60em) {
+    /*para pc*/
+    .encabezado-principal {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .logo {
+        width: calc(40% - 1em);
+    }
+    .buscador {
+        max-width: calc(30% - 1em);
+        position: inherit;
+        text-align: right;
+        position: relative;
+        top: 80px;
+    }
+    .que-buscas {
+        width: 400px;
+    }
+    .carrito {
+        text-align: left;
+        width: calc(305% - 0.3em);
+        position: inherit;
+        position: relative;
+        top: 60px;
+    }
+    .carrito i {
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 2.5em;
+    }
+    .carrito em {
+        position: absolute;
+        font-size: 0.4em;
+    }
+    a.desplegable {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .menu li {
+        width: calc(20% - 0.2em);
+    }
+    .diferentes-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .primer-div {
+        width: calc(30% - 5px);
+    }
+    .nombre-del-curso {
+        text-align: end;
+    }
+}

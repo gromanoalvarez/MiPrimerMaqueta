@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fuerza a los dispositivos a dar su verdadera resolucion-->
+    <title>Aprender IT</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image / x-icon">
+    <!-- iconos-->
+    <link rel="icon" href="img/favicon.ico" type="image / x-icon">
+    <!-- iconos-->
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <!-- slider-->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- slider-->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- JQUERY-->
+    <script src="https://kit.fontawesome.com/cbe8d0d0fd.js" crossorigin="anonymous"></script>
+    <!-- iconos-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- slider-->
+    <script src="js/index.js"></script>
+    <!-- JS PRINCIPAL-->
+
+    <link rel="stylesheet" href="css/estilo-principal.css">
+    <!-- CSS VA AL FINAL PARA QUE PISE LOS ESTILOS ANTERIORES-->
+
+</head>
+
+<body>
+    <header>
+        <section class="encabezado-principal" id="inicio">
+            <article class="logo">
+                <a href="index.html">
+                    <img src="img/logo-aprenderit.png" alt="logo">
+                </a>
+            </article>
+
+            <article class="buscador">
+                <form action="#" method="GET" enctype="application/x-www-form-urlencoded">
+                    <datalist id="informacion">
+                        <option value="Cursos Destacados"></option>
+                        <option value="Calendario De Proximos Cursos"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Formulario De Contacto"></option>
+                        <option value="Gift Card"></option>
+                    </datalist>
+                    <label class="label" for="buscador"></label>
+                    <input class="que-buscas" type="text" id="buscador" name="buscador" list="informacion" placeholder="¿Que buscas?" maxlength="105">
+                    <!-- <input class="boton-buscar"type="submit" value=" "  /> -->
+                </form>
+            </article>
+
+            <article class="carrito">
+                <a href="gift-card.html">
+                    <i class="fas fa-cart-plus"><span id="contador">0</span></i>
+                </a>
+            </article>
+        </section>
+    </header>
+
+    <nav class="menu">
+
+        <ul>
+            <li>
+                <a href="detalle-de-cursos.html">
+                    Detalles de Cursos
+                </a>
+            </li>
+            <li>
+                <a href="calendario-de-proximos-cursos.html">
+                    Próximos Cursos
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-inscripcion-a-cursos.html">
+                    Inscripción a cursos
+                </a>
+            </li>
+            <li>
+                <a href="gift-card.html">
+                    Gift Card
+                </a>
+            </li>
+            <li>
+                <a href="formulario-de-contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- <a class="desplegable"> <i class="fas fa-bars  "></i></a>-->
+
+    <main class="cuerpo">
+
+        <section>
+            <article class="slider">
+                <img src="img/slider-en-diseno-web-01.png" alt="">
+                <img src="img/curso 4.png" alt="">
+                <img src="img/curso it-manager.jpg" alt="">
+                <img src="img/curso shutterstock_1363031135.jpg" alt="">
+                <img src="img/curso-online-it-manager-gobierno-tic-la-salle-campus-bcn.jpg" alt="">
+                <img src="img/curso21.png" alt="">
+                <img src="img/curso5.jpg" alt="">
+            </article>
+        </section>
+
+        <section class="pasos">
+            <article class="paso01">
+                <p> TOMAR CLASES A DISTANCIA ES FÁCIL</p>
+            </article>
+
+            <article class="paso02">
+                <p> CON MÁS DE 100 CURSOS GRATIS </p>
+            </article>
+
+            <article class="paso03">
+                <p> CREA TU USUARIO GRATIS AQUI</p>
+            </article>
+        </section>
+
+        <section class="cursos-destacados">
+            <article>
+                <h2>CURSOS DESTACADOS</h2>
+            </article>
+
+            <article class="diferentes-cursos">
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $4,690</h3>
+                    </div>
+
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">16hs</p>
+                        </div>
+
+                        <div class="nombre-del-curso">
+                            <p> Javascript </p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $10.500</h3>
+                    </div>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">50hs</p>
+                        </div>
+
+                        <div class="nombre-del-curso">
+                            <p>Java</p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $15,090</h3>
+                    </div>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">40hs</p>
+                        </div>
+                        <div class="nombre-del-curso">
+                            <p>MySQL</p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $4,990</h3>
+                    </div>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">12hs</p>
+                        </div>
+                        <div class="nombre-del-curso">
+                            <p> PHP - OOP</p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $5,790</h3>
+                    </div>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">12hs</p>
+                        </div>
+                        <div class="nombre-del-curso">
+                            <p>Git</p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primer-div">
+                    <div class="posicion-relativa">
+                        <h3 class="posicion-absoluta"> $13.800</h3>
+                    </div>
+                    <div class="dos-columnas">
+                        <div>
+                            <p class="horas">48hs</p>
+                        </div>
+                        <div class="nombre-del-curso">
+                            <p> Pyton</p>
+                            <a href="detalle-de-cursos.html">Ver Detalle</a>
+                            <br>
+                            <input type="button" value="Comprar" class="boton" onclick="sumarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="medio-de-pago">
+            <h2>MEDIOS DE PAGO</h2>
+            <article class="slider2">
+                <img src="img/mp amazon pay.png" alt="">
+                <img src="img/PAYU_LOGO_LIME.png" alt="">
+                <img src="img/mp visa.png" alt="">
+                <img src="img/mp mastercard.png" alt="">
+                <img src="img/mp mp.png" alt="">
+            </article>
+        </section>
+    </main>
+
+
+    <footer class="contenedor-del-pie">
+
+        <section>
+            <ul>
+                <li>
+                    <small> Romano Álvarez Germán</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-del-pie">
+            <br>
+            <a href="#inicio">Ir arriba</a>
+            <p>
+                <br> Términos y Condiciones
+                <br>
+            </p>
+            <p>
+                <br> Politica de Privacidad
+                <br>
+            </p>
+        </section>
+
+        <section class="redes">
+            <br>
+            <article>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </article>
+            <br>
+            <article>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </article>
+            <br>
+            <article>
+                <a href="mailto:administracion@aprenderit.com" target="_blank">Email</a>
+            </article>
+        </section>
+    </footer>
+
+
+
+</body>
+
+</html>

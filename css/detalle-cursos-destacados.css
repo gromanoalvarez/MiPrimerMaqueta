@@ -1,0 +1,181 @@
+.foto-titulo-detalles{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.foto{
+    margin: 4em 1em;
+}
+.foto img{
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: solid 1px #113E59;
+    text-align: center;
+}
+.foto img:hover{
+    border:solid 1px #0477BF;
+    filter:saturate(3);
+}
+.titulo-detalles{
+    text-align: left;
+    margin: 2em;
+    padding: 1em;
+}
+.titulo-detalles h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.titulo-detalles h3{
+    text-align: center;
+}
+.titulo-detalles p {
+    border-radius: 15px;
+    border: solid 1px #113E59;
+    font-family: 'Cormorant SC', serif;
+    font-size: x-large;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+button{
+    background-color: #113E59;
+    width: 8em;
+    height: 100px;
+    font-size: 2em;
+    border-radius: 10px;
+    border: solid 1px #113E59;
+}
+button:hover{
+    border:solid 1px #0477BF;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.contenidos-en-columnas{
+    background-image: url(../img/azul\ horizonal.jpg) ; 
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 5em;
+    padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.titulo{
+    max-width: 100%;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 4em;
+    border-top: 1px solid #113E59;
+    border-bottom: 1px solid #113E59;
+}
+.formulario-de-contenidos{
+    border: #113E59 1px solid;
+    font-weight: bolder;
+    text-align: center;
+    max-width: 100%;
+}
+.formulario-de-contenidos h3{
+    font-weight: bolder;
+}
+.unidades i{
+    color: #113E59;
+}
+.unidades p{
+    border-bottom: #113E59 2px solid;
+    color: #113E59;
+    max-width: 100%;
+    text-align: left;
+}    
+.imagen-y-datos-del-docente{
+    margin-bottom: 80px;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+}
+.imagen-del-docente img{
+    border-radius: 50%;
+    height: 300px;
+    filter:drop-shadow(8px 8px 25px rgb(77, 68, 68));
+}
+.datos-del-docente{
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.datos-del-docente p{
+    text-align: justify;
+}
+.datos-del-docente img{
+    width: 250px;
+    height: 100px;
+    border-radius: 50%;
+}
+.diferentes-cursos02{
+    margin-top: 3em;
+    border-top: 2px  dotted  #113E59 ;
+
+    padding: 2em;
+}
+.div02{
+    text-align: center;
+    border: 2px dotted   #113E59;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 1em;
+    margin: 1em;
+}
+
+
+@media screen and (min-width:47em){
+    .diferentes-cursos02{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .div02{
+        width: calc(40% - 5px);
+    }
+}
+
+@media screen and (min-width:60em){
+    .foto-titulo-detalles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .foto{
+        width: calc(30% - 0.5em);
+    }
+    .titulo-detalles{
+        width: calc(70% - 0.5em);
+    }
+    .titulo-detalles h2{
+        text-align: left;
+    }
+    .titulo-detalles h3{
+        text-align: left;
+    }
+    .imagen-y-datos-del-docente{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .imagen-del-docente img{
+        max-width: 100%;
+        margin: 4em;
+    }
+    .datos-del-docente{
+        width: calc(50% - 5px);
+    }
+    .diferentes-cursos02{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .div02{
+        max-width: calc(20% - 5px);
+    }
+}
